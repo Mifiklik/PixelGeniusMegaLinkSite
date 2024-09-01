@@ -71,7 +71,8 @@ body {
     box-shadow: 0 0 10px rgba\(0, 0, 0, 0.1\);
     padding: 20px;
     text-align: center;
-    width: 500px;
+    width: 80vw;
+    max-width: 500px;
     /* Ширина контейнера */
 }
 
@@ -86,6 +87,7 @@ body {
 .container h2 {
     color: var(--color-bold-text);
     font-size: 3em;
+    font-weight: 700;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
 
@@ -98,6 +100,7 @@ body {
     list-style-type: none;
     font-size: 1.5em; 
     font-family: sans-serif;
+    font-weight: 500;
 
     display: flex;
     justify-content: left;
@@ -118,4 +121,14 @@ body {
 
 .container a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 600px){
+    .container ul{
+        font-size: 1em;
+    }
+
+    .container h2{
+        font-size: 2em;
+    }
 }
